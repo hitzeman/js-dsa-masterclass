@@ -1,0 +1,15 @@
+1. FREQUENCY COUNTER- uses objects to collect values/frequencies of values
+  This can often avoid the need for nested loops with arrays/strings
+  O(n) vs O(n^2)
+
+  Example:
+  Write a function called same which accepts two arrays. The function should return true if every value in the array has its corresponding value squared in the second array. The frequency of values must be the same.
+
+  function same(arr1, arr2) {
+    // since frequency must be the same, compare the length of both arrays, and if different, return false
+
+    // sort both arrays
+    // iterate over both arrays, asserting that arr1[i] === arr2[1]^2, else return false. Since these are sorted, we can compare the array values at the same index
+
+    // return true;
+  }

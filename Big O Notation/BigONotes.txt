@@ -1,0 +1,46 @@
+Big O Notation
+
+Allows us to talk about how the runtime of an algorithm grows as the inputs grow.
+
+Constant f(n) = 1 -----> O(1)
+Linear f(n) = n -----> O(n)
+Quadratic f(n) = n^2 -----> O(n^2)
+
+Rules of Thumb:
+1. Drop constants
+  O(500) --> O(1)
+  O(2n) --> O(n)
+  O(13n^2) --> O(n^2)
+
+2. Drop smaller terms
+  O(n + 10) --> O(n)
+  O(1000n + 50) --> O(n)
+  O(n^2 + 5n + 8) --> O(n^2)
+
+3. Arithmetic operations are constant
+  2 + 2
+  1000000 + 2
+
+4. Variable assignment is constant
+5. Accessing elements in an array by index or object key is constant
+6. In a loop, the complexity is the length of the loop times the complexity of whatever happens inside
+
+
+__________________________________________________________________________________________________________
+
+Space Complexity (auxiliary space complexity)- space required by algorithm, not taken by inputs.
+
+Rules of Thumb:
+1. Most primitives(booleans, numbers, undefined, null) are constant space
+2. Strings requier O(n) space where n is the string length
+3. Reference types are genearlly O(n), where n is the length (arrays) or number of keys (objects)
+
+__________________________________________________________________________________________________________
+
+Logarithms - inverse of exponentiation
+
+log2(8) = 3 --> 2^3 = 8
+
+we'll ommit the 2 --> log === log2
+
+ 

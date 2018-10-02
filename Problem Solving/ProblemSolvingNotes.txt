@@ -1,0 +1,111 @@
+Algorithm- a process or set of steps to accomplish a certain task
+
+Problem Solving
+1. Understand the Problem
+  a. Can I restate the problem in my own words
+  b. What are the inputs
+  c. What are the outputs (returned from solution)
+  d. Can the outputs be determined from the inputs?
+  e. How should i label important pieces of data?
+2. Explore concrete examples
+3. Break it down
+4. Solve/simplify
+5. Look back and refactor
+
+https://cs.slides.com/colt_steele/problem-solving-patterns#/
+
+
+Example: Write a function which takes two numbers and returns their sum
+UNDERSTAND THE PROBLEM
+1. Can I restate the problem in my own words?
+  Write a function that adds two numbers.
+2.  What are the inputs?
+  Will we always receive two inputs? More? Less?
+  Is there an upper bound? (js returns infinity for numbers that are too big)
+  Are both inputs of the same type?
+3. 
+4. 
+5. function Add(num1, num2);
+
+________________________________________________________
+
+Example: Write a function which takes in a string and returns counts of each character in the string?
+UNDERSTAND THE PROBLEM
+1. Can I restate the problem in my own words?
+  Write a function that counts the number of time a given character in a string exists.
+2.  What are the inputs?
+  Undefined? Null? Empty string?
+3. What are the outputs
+  Object {
+    char: count
+  }
+4. Can outputs be determined from the input?
+5. Label important pieces of data 
+  function characterCount(str)
+
+  EXAMPLES
+  Simple
+
+  characterCount("aaaa"); // {a:4}
+  characterCount("hello"); // {h:1, e:1, l:2, o:1}
+
+  // At this point, should our object already contain all characters initialized at 0. Then we just need to update the value instead of adding a new char?
+
+  Complex
+  characterCount("my phone number is 182763?");
+  // are we going to account for spaces? numbers? special characters?
+
+  characterCount("Hello hi"); 
+  // do we store both uppercase and lowercase H?
+  /// {H:1, h:1} or {h:2} or {H:2}
+
+  Empty inputs
+  characterCount();
+  characterCount("");
+
+  Invalid inputs
+  characterCount(null);
+  characterCount(1);
+
+  // What  should we return?
+
+
+BREAK IT DOWN
+
+Write out the steps you need to take
+
+// most simple
+function characterCount(str) {
+  // do something
+  // return an object with keys that are lowercase alphanumeric characters in the string; 
+}
+
+// expanded solution
+function characterCount(str) {
+  // make object to return at end
+  // loop over string, for each character...
+    // if char is a number/letter and is a key in object, add one to count
+    // if char is a number/letter and is not in object, add it and set value to 1
+    // if char is something else (space, ., etc) dont do anything
+  // return object at end
+}
+_______________________________________________________
+
+
+SIMPLIFY/SOLVE
+
+Don't get stuck on one small detail...write the 90% or so you know then you can plug.
+
+
+LOOK BACK & REFACTOR
+Can you check the result?
+Can you derive result differently?
+Can you undertand it at a glance?
+Can you use result or method for some other problem?
+Can you improve the performance?
+Can you think of other ways to refactor?
+How have others solved this problem?
+
+
+
+
