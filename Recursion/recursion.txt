@@ -1,0 +1,10 @@
+Recursion- a process (a function) that calls itself
+
+Invoke the same function with a different input until you hit the base case
+
+Base Case- the condition when the recursion ends.
+
+Two essential parts of a recursive function:
+1. Base case
+2. Different input
+

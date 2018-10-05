@@ -1,0 +1,6 @@
+Binary search: eliminates half of the remaining elements at a time
+
+Only works with sorted arrays, lists, etc.
+
+Divide and Conquer
+
