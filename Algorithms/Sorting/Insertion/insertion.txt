@@ -1,0 +1,5 @@
+Builds up the sort by gradually creating a larger left half which is always sorted
+
+Strength: Since we keep one side of the array sorted, it works well with live, dynamic, streaming data... it doesn't need the complete array up front
+
+Worst case: [4,3,2,1]
