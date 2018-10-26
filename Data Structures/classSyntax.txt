@@ -1,0 +1,7 @@
+Class- a blueprint for creating objects with pre-defined properties and methods
+
+Constructor- this keyword refers to instance
+
+Instance Methods- provide functionaly that pertains to single instance
+
+Class Methods- 
