@@ -1,0 +1,7 @@
+Stack- abstract data structure
+
+LIFO (Last In First Out)
+
+Last element added to stack will be the first element to be removed
+
+Stack of plates
