@@ -1,0 +1,8 @@
+Data structure that consists of nodes in a parent/child relationship
+
+Root- Top node in a tree
+Child- a node directly connected to another node when moving away from the Root
+Parent- the converse notion of a child
+Siblings- node that have the same parent
+Leaf- node with no children
+Edge- connection between one node and another 
